@@ -9,7 +9,7 @@ const Book = ({ book, removeBook }) => {
   } = book;
 
   const handleRemoveBook = book => {
-    removeBook(book)
+    removeBook(book);
   };
 
   return (
@@ -17,13 +17,14 @@ const Book = ({ book, removeBook }) => {
       <td>{id}</td>
       <td>{title}</td>
       <td>{category}</td>
-      <td><button onClick={handleRemoveBook}>Remove Book</button></td>
+      <td><button type="button" onClick={handleRemoveBook}>Remove Book</button></td>
     </>
   );
 };
 
 Book.propTypes = {
   book: PropTypes.objectOf(PropTypes.object).isRequired,
+  removeBook: PropTypes.func.isRequired,
 };
 
 export default Book;
