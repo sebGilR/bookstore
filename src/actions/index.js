@@ -7,3 +7,5 @@ export const removeBook = book => ({
   type: 'REMOVE_BOOK',
   book,
 });
+
+export default createBook;
