@@ -6,5 +6,5 @@ export const createBook = book => ({
 
 export const removeBook = book => ({
   type: 'REMOVE_BOOK',
-  pos: book.id
+  book
 });
