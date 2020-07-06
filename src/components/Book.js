@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Book = ({ book }) => {
   const {
     id,
     title,
-    category
+    category,
   } = book;
 
   return (
@@ -13,7 +14,11 @@ const Book = ({ book }) => {
       <td>{title}</td>
       <td>{category}</td>
     </>
-  )
+  );
+};
+
+Book.propTypes = {
+  book: PropTypes.object.isRequired
 }
 
 export default Book;
