@@ -1,5 +1,5 @@
 
-const booksReducer = (state, action) => {
+const booksReducer = (state = [], action) => {
   switch (action.type) {
     case 'CREATE_BOOK':
       return [
@@ -7,10 +7,12 @@ const booksReducer = (state, action) => {
         action.book
       ]
     case 'REMOVE_BOOK':
-      return [
-        ...state.slice(0, action.pos),
-        ...state.slice(action.pos + 1, state.length)
-      ]
+    // return [
+    //   ...state.slice(0, action.pos),
+    //   ...state.slice(action.pos + 1, state.length)
+    // ];
+    default:
+      return state;
   }
 }
 
