@@ -24,5 +24,3 @@ yarn-debug.log*
 yarn-error.log*
 node_modules
 
-.stylelintrc.json
-.eslintrc.json
