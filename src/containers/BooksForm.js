@@ -11,15 +11,10 @@ const BooksForm = props => {
   const [category, setCategory] = useState('Action');
 
   const handleChange = e => {
-    switch (e.target.type) {
-      case 'select-one':
-        setCategory(e.target.value);
-        break;
-      case 'text':
-        setTitle(e.target.value);
-        break;
-      default:
-        break;
+    if (e.target.name === "title") {
+      setTitle(e.target.value);
+    } else {
+      setCategory(e.target.value)
     }
   };
 
@@ -33,11 +28,11 @@ const BooksForm = props => {
     <form onSubmit={handleSubmit}>
       <label htmlFor="title">
         Title:
-        <input id="title" type="text" onChange={handleChange} value={title} />
+        <input id="title" name="title" type="text" onChange={handleChange} value={title} />
       </label>
       <label htmlFor="category">
         Category:
-        <select id="category" value={category} onChange={handleChange}>
+        <select id="category" name="category" value={category} onChange={handleChange}>
           {
             categories.map(
               category => <option key={category}>{category}</option>,
