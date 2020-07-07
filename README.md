@@ -1,36 +1,48 @@
-# Bookstore
+[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
+![GitHub](https://img.shields.io/github/license/OlukaDenis/todo-list-javascript)
 
-This is a calculator program created using React stateful class components and functional components. The state is managed by the parent App component and the logic for the calculator was kept in separate modules.
+# Project: To-do List
 
-## Live Demo
+This is a bookstore created with react adn redux for the managment of the state, the user can add and remove books to it
 
-[View Live Demo](https://react-calc-seb.herokuapp.com/)
+![Bookstore](https://user-images.githubusercontent.com/47485749/86841732-8a20fd80-c061-11ea-83bc-fc62961534f7.png)
 
-## Screenshot
+## Built With
+- Javascript(ES6)
+- React
+- Redux
+- NodeJs
 
-![screenshot](./public/screenshot.png)
+## Prerequisites
+- npm
 
-## Features & Usage
-
-- The basic mathematical operations are included: sum, substraction, multiplication, division.
-- Modifier operations are included as well: %, +/-.
-- The display can be cleared pressing "AC".
-- The display shows the current total, the operation being performed, and the next value to operate.
-- Operations with decimals can be performed.
-- For accessibility, buttons can be navigated with "tab" and selected with "enter".
+## Functionalities 
+- Add a book
+- Remove a book
+- Filter books by category
 
 ## Setup
 
-1. Clone this repository and access the project's directory.
-2. Run "npm install".
-3. Run "npm start" to work on the development server.
-4. Run "npm run build" once the project is ready for production.
+Use the [git](https://git-scm.com/downloads) to clone the project to your local machine.
+```sh
+$ git clone https://github.com/sebGilR/bookstore.git
+```
 
-## Built With
+Navigate to the extracted folder
+```sh 
+cd bookstore
+```
 
-- JavaScript/ES6
-- React
-- Heroku
+Install the dependencies and modules
+```sh
+$ npm install
+```
+
+### Usage
+```sh
+$ npm start
+```
+This will open the app at port 9000. If it doesn't open, visit ```http://localhost:9000```
 
 ## Author
 
@@ -40,12 +52,27 @@ This is a calculator program created using React stateful class components and f
 - Twitter: [@sebGilR](https://twitter.com/sebGilR)
 - Linkedin: [sebastiangilrodriguez](https://www.linkedin.com/in/sebastiangilrodriguez)
 
+👤 **Josue Brigido**
+
+- Github: [@kalavhan](https://github.com/kalavhan)
+- Twitter: [@kalavhan](https://twitter.com/kalavhan)
+- Linkedit [LinkedIn](https://linkedin.com/in/kalavhan)
+
+
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/sebGilR/react_calc/issues).
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgements
+- [Microverse](https://www.microverse.org/)
+- [The Odin Project](https://www.theodinproject.com/)
+- [Freecodecamp](http://freecodecamp.org/)
+
+## 📝 License
+
+This project is licensed under MIT license - see [LICENSE](/LICENSE) for more details.
