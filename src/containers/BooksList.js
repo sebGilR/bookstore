@@ -13,18 +13,18 @@ const BooksList = props => {
 
   const handleFilterChange = newFilter => {
     props.changeFilter(newFilter.target.value);
-  }
+  };
 
   const filteredBooks = () => {
-    if(filter === 'ALL') {
+    if (filter === 'ALL') {
       return books;
     }
     return books.filter(book => book.category === filter);
-  }
+  };
 
   return (
     <>
-      <CategoryFilter changeFilter={handleFilterChange}/>
+      <CategoryFilter changeFilter={handleFilterChange} />
       <table>
         <thead>
           <tr>
@@ -56,12 +56,18 @@ const mapDispatchToProps = dispatch => ({
   },
   changeFilter: filter => {
     dispatch(changeFilter(filter));
-  }
+  },
 });
+
+BooksList.defaultProps = {
+  filter: 'ALL',
+}
 
 BooksList.propTypes = {
   books: PropTypes.objectOf(PropTypes.array).isRequired,
+  filter: PropTypes.string,
   removeBook: PropTypes.func.isRequired,
+  changeFilter: PropTypes.func.isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
