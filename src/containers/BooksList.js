@@ -24,18 +24,11 @@ const BooksList = props => {
 
   return (
     <>
-      <div>
+      <header>
         <h1>Bookstore</h1>
         <CategoryFilter changeFilter={handleFilterChange} />
-      </div>
+      </header>
       <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
         <tbody>
           {filteredBooks().map(book => (
             <tr key={book.id}>
