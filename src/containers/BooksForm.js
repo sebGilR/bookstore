@@ -11,10 +11,10 @@ const BooksForm = props => {
   const [category, setCategory] = useState('Action');
 
   const handleChange = e => {
-    if (e.target.name === "title") {
+    if (e.target.name === 'title') {
       setTitle(e.target.value);
     } else {
-      setCategory(e.target.value)
+      setCategory(e.target.value);
     }
   };
 
