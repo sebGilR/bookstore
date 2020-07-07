@@ -28,7 +28,7 @@ const BooksForm = props => {
     <form onSubmit={handleSubmit}>
       <h2 className="form-title">ADD NEW BOOK</h2>
       <div>
-        <input id="title" type="text" onChange={handleChange} value={title} placeholder="Book title" />
+        <input id="title" type="text" onChange={handleChange} name="title" value={title} placeholder="Book title" />
         <label htmlFor="category">Select a category
         <select id="category" value={category} onChange={handleChange}>
             {
