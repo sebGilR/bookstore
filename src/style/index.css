@@ -138,3 +138,9 @@ form button {
   color: #ffffff;
   letter-spacing: 0.5px;
 }
+
+#category-filter-label {
+  display: inline-block;
+  color: #1212127e;
+  margin-right: 10px;
+}
