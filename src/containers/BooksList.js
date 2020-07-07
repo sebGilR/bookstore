@@ -24,7 +24,7 @@ const BooksList = props => {
 
   return (
     <>
-      <CategoryFilter changeFilter={handleFilterChange} />
+      <CategoryFilter handleFilterChange={handleFilterChange} />
       <table>
         <thead>
           <tr>
