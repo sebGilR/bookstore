@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import App from './components/App';
+import rootReducer from './reducers';
 
-const App = () => (
-  <h1>Hi</h1>
-);
+let idGen = 0;
+
+const initialState = [
+  { id: idGen += 1, title: 'Book 1', category: 'Action' },
+  { id: idGen += 1, title: 'Book 2', category: 'Learning' },
+  { id: idGen += 1, title: 'Book 3', category: 'History' },
+];
+
+const store = createStore(rootReducer, { books: initialState });
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root'),
 );
