@@ -26,13 +26,13 @@ const BooksList = props => {
     <>
       <header>
         <h1>Bookstore</h1>
-        <CategoryFilter changeFilter={handleFilterChange} />
+        <CategoryFilter handleFilterChange={handleFilterChange} />
       </header>
       <table>
         <tbody>
           {filteredBooks().map(book => (
             <tr key={book.id}>
-              <Book book={book} removeBook={() => handleRemoveBook(book)} />
+              <Book book={book} handleRemoveBook={handleRemoveBook} />
             </tr>
           ))}
         </tbody>

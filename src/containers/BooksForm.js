@@ -22,6 +22,7 @@ const BooksForm = props => {
     e.preventDefault();
     const book = { id: idGen += 1, title, category };
     props.submitNewBook(book);
+    e.target.reset();
   };
 
   return (
