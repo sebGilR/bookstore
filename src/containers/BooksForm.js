@@ -11,15 +11,10 @@ const BooksForm = props => {
   const [category, setCategory] = useState('Action');
 
   const handleChange = e => {
-    switch (e.target.type) {
-      case 'select-one':
-        setCategory(e.target.value);
-        break;
-      case 'text':
-        setTitle(e.target.value);
-        break;
-      default:
-        break;
+    if (e.target.name === 'title') {
+      setTitle(e.target.value);
+    } else {
+      setCategory(e.target.value);
     }
   };
 
