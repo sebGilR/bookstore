@@ -12,7 +12,7 @@ const CategoryFilter = ({ handleFilterChange }) => {
 };
 
 CategoryFilter.propTypes = {
-  handleFilterChange: PropType.objectOf(PropType.object).isRequired,
+  handleFilterChange: PropType.func.isRequired,
 };
 
 export default CategoryFilter;
