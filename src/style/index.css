@@ -68,8 +68,9 @@ tr {
   line-height: 19px;
 }
 
-.book-delete button {
+.book-delete > button {
   margin-top: 21px;
+  padding-left: 0;
   font-size: 14px;
   letter-spacing: 0px;
   color: #4386bf;
@@ -77,4 +78,63 @@ tr {
   border: none;
   background: none;
   cursor: pointer;
+}
+
+form {
+  width: calc(100% - 200px);
+  margin: 40px 100px;
+  padding: 29px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-title {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888888;
+  margin-bottom: 19px;
+}
+
+form input, select, button {
+  height: 45px;
+  padding: 13px 17px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+
+form #title {
+  width: 50%;
+}
+
+form label {
+  position: relative;
+  top: -15px;
+  font-size: 13px;
+  color: #888888;
+  display: flex;
+  flex-direction: column;
+}
+
+form #category {
+  min-width: 200px;
+}
+
+form button {
+  width: 184px;
+  height: 45px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  cursor: pointer;
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.5px;
 }
