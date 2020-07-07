@@ -30,8 +30,9 @@ const BooksForm = props => {
       <h2 className="form-title">ADD NEW BOOK</h2>
       <div>
         <input id="title" type="text" onChange={handleChange} name="title" value={title} placeholder="Book title" />
-        <label htmlFor="category">Select a category
-        <select id="category" value={category} onChange={handleChange}>
+        <label htmlFor="category">
+          Select a category
+          <select id="category" value={category} onChange={handleChange}>
             {
               categories.map(
                 category => <option key={category}>{category}</option>,
