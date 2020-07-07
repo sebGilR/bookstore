@@ -13,6 +13,8 @@ header {
   align-items: center;
   height: 95px;
   padding-left: 100px;
+  background-color: white;
+  margin-bottom: 38px;
 }
 
 header h1 {
@@ -42,6 +44,7 @@ tr {
   display: flex;
   flex-direction: column;
   padding: 32px 27px 28px 27px;
+  margin-bottom: 15px;
 }
 
 .book-category {
