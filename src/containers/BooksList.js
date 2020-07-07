@@ -24,7 +24,10 @@ const BooksList = props => {
 
   return (
     <>
-      <CategoryFilter changeFilter={handleFilterChange} />
+      <div>
+        <h1>Bookstore</h1>
+        <CategoryFilter changeFilter={handleFilterChange} />
+      </div>
       <table>
         <thead>
           <tr>
