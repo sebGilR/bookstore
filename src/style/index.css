@@ -53,7 +53,9 @@ tr {
   border: solid 1px #e8e8e8;
   background-color: #fff;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   padding: 32px 27px 28px 27px;
   margin-bottom: 15px;
 }
@@ -92,15 +94,15 @@ form button {
 }
 
 .book-delete > button {
-  margin-top: 21px;
-  padding-left: 0;
-  font-size: 14px;
-  letter-spacing: 0;
-  color: #4386bf;
-  line-height: 19px;
-  border: none;
-  background: none;
+  width: 184px;
+  height: 45px;
+  border-radius: 3px;
+  background-color: #0290ff;
   cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.5px;
 }
 
 form {
